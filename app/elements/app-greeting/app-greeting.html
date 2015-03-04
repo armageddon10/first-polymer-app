@@ -1,0 +1,23 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" type="text/css" href="../../../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="app-greeting" attributes="user">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <core-ajax id="request" url="https://api.github.com/users/armageddon10" auto handleAs="json" response="{{user}}"></core-ajax>
+    Yo, {{user.name}}!<br />
+    This was fetched from {{$.request.url}}.
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        // define element prototype here
+        name: "World"
+      });
+    })();
+  </script>
+</polymer-element>

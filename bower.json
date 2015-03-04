@@ -1,0 +1,11 @@
+{
+  "name": "first-polymer-app",
+  "version": "0.0.0",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.4",
+    "core-ajax": "Polymer/core-ajax#~0.5.5"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^2.2.3"
+  }
+}
